@@ -8,6 +8,7 @@ driver.get("https://www.amazon.in/gp/bestsellers/books/")
 titles = driver.find_elements_by_xpath("//div[@class='p13n-sc-truncated']")
 prices = driver.find_elements_by_xpath("//span[@class='p13n-sc-price']")
 
+
 for i in titles:
     print(i.text)
 
